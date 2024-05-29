@@ -49,7 +49,7 @@ html {
   background-color: white;
   min-width: 250px;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.05);
-  z-index: 1;
+  z-index: 100;
   margin-top: 50px;
   border-radius: 5px;
 }
@@ -782,9 +782,9 @@ html {
     display: none;
     position: absolute;
     background-color: white;
-    top: 0px;
-    left: 150px;
-    min-width: 250px;
+    top: 0;
+    right: 0;
+    min-width: 220px;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.05);
     z-index: 1;
     margin-top: 50px;
@@ -794,6 +794,9 @@ html {
   .drop-down:hover {
     background-color: #e4c4c49f;
     color: #38bdf8;
+  }
+
+  .drop-down:hover p {
     font-weight: 700;
   }
 
@@ -853,7 +856,7 @@ html {
 
   @keyframes dropdown-anime {
     from {
-      transform: translateY(30px);
+      transform: translateX(60px);
       opacity: 0;
     }
     to {

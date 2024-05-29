@@ -279,3 +279,24 @@
     </div>
   </div>
 </nav>
+
+<script>
+  //*****Navbar*****/
+  let tl = gsap.timeline();
+
+  tl.from("#nav-logo", {
+    scale: 0,
+    opacity: 0,
+    duration: 0.5,
+    delay: 0.2,
+    ease: "expo.out",
+  });
+
+  tl.from("#navbar #nav-items .nav-item", {
+    y: -100,
+    opacity: 0,
+    duration: 1,
+    ease: "expo.out",
+    stagger: 0.1,
+  });
+</script>
